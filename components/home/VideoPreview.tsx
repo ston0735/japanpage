@@ -20,18 +20,16 @@ export function VideoPreview() {
             </span>
             <div className="section-divider"></div>
             <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-honey-700/80">
-              Service Preview
+              Free Lesson Video
             </span>
           </div>
 
           <div className="max-w-2xl">
             <h2 className="font-display font-light text-4xl md:text-5xl lg:text-6xl text-honey-50 leading-[1.2] mb-4">
-              サービス内容を
-              <br />
-              動画で確認
+              無料養生知識影片區
             </h2>
             <p className="text-base md:text-lg text-honey-100/80 max-w-md">
-              伝統中医学に基づいた養生方法と穴位按摩の実践方法をご紹介します。
+              伝統中医学に基づいた養生方法と穴位按摩の実践方法を動画でご紹介します。
             </p>
           </div>
         </div>
@@ -42,7 +40,7 @@ export function VideoPreview() {
           <div className="relative aspect-video w-full bg-black/80">
             {isPlaying ? (
               <video
-                src="/videos/demo.mp4"
+                src="/videos/lesson-video.mp4"
                 controls
                 autoPlay
                 className="w-full h-full"
@@ -77,10 +75,10 @@ export function VideoPreview() {
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
               <div>
                 <h3 className="text-lg md:text-xl font-semibold text-honey-50 mb-2">
-                  穴位按摩による健康維持の実践方法
+                  中医学養生講座：健康維持の実践方法
                 </h3>
                 <p className="text-sm md:text-base text-honey-100/70">
-                  資深中医師による穴位按摩の基本テクニックと日常生活への取り入れ方をご紹介します。
+                  資深中医師による養生の基本テクニックと日常生活への取り入れ方をご紹介します。
                 </p>
               </div>
               <div className="flex items-center gap-3 text-honey-300/80 whitespace-nowrap">
@@ -95,7 +93,7 @@ export function VideoPreview() {
           {[
             {
               title: "実践的な手法",
-              description: "資深中医師による正確な穴位按摩のテクニック",
+              description: "資深中医師による正確な養生テクニック",
             },
             {
               title: "日常生活への応用",
