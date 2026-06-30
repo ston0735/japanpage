@@ -1,0 +1,214 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --font-sans: "Noto Sans JP", "Noto Sans TC", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Shippori Mincho", "Noto Serif JP", "Noto Serif TC", "Fraunces", ui-serif, Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-heading: var(--font-display);
+
+  /* "honey" scale = 暖金 / 真鍮 (brushed brass) — 養生 LP 主アクセント */
+  --color-honey-50: #FAF6EE;
+  --color-honey-100: #F2EAD8;
+  --color-honey-200: #E5D7B5;
+  --color-honey-300: #D4BC85;
+  --color-honey-400: #C8A85F;
+  --color-honey-500: #A88840;
+  --color-honey-600: #7A6028;
+  --color-honey-700: #4F3F1A;
+
+  /* "leaf" scale = 抹茶綠 — 養生 副アクセント */
+  --color-leaf-50: #EFF3E6;
+  --color-leaf-300: #A8BC7F;
+  --color-leaf-500: #6B8E4E;
+  --color-leaf-700: #4A6435;
+
+  /* "ink" scale = 暖墨色 (warm ink) */
+  --color-ink-200: #E5DDD0;
+  --color-ink-500: #8A8073;
+  --color-ink-700: #4D4438;
+  --color-ink-900: #2A2620;
+
+  --color-warn-50: #FFF7ED;
+  --color-warn-500: #C04A3D;
+  --color-success-50: #F0FDF4;
+  --color-success-500: #16A34A;
+
+  /* LINE 公式ブランドカラー */
+  --color-line: #06C755;
+  --color-line-dark: #059A43;
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+
+  --text-hero: 56px;
+  --text-section: 36px;
+  --text-card: 22px;
+}
+
+:root {
+  --background: hsl(40 50% 96%);     /* 和紙米色 */
+  --foreground: hsl(30 18% 18%);     /* 暖墨 */
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(30 18% 18%);
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(30 18% 18%);
+  --primary: hsl(40 47% 58%);        /* 暖金 */
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(85 30% 43%);      /* 抹茶綠 */
+  --secondary-foreground: hsl(0 0% 100%);
+  --muted: hsl(36 30% 90%);
+  --muted-foreground: hsl(30 12% 48%);
+  --accent: hsl(40 65% 90%);
+  --accent-foreground: hsl(30 18% 18%);
+  --destructive: hsl(5 53% 50%);
+  --destructive-foreground: hsl(0 0% 100%);
+  --border: hsl(34 22% 86%);
+  --input: hsl(34 22% 86%);
+  --ring: hsl(40 47% 58%);
+  --radius: 0.75rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-sans);
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    color: var(--color-ink-900);
+  }
+}
+
+/* ===== Editorial number (giant outlined numerals as section markers) ===== */
+.editorial-num {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-style: italic;
+  font-size: clamp(7rem, 14vw, 13rem);
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(168, 136, 64, 0.18);
+  position: absolute;
+  right: -1.5rem;
+  top: 2rem;
+  pointer-events: none;
+  line-height: 0.8;
+  z-index: 0;
+  user-select: none;
+}
+
+/* ===== Section eyebrow divider ===== */
+.section-divider {
+  width: 60px;
+  height: 1px;
+  background: linear-gradient(90deg, var(--color-honey-400), transparent);
+}
+
+/* ===== Brass-colored text outline (for hero double-headline) ===== */
+.text-outline-honey {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--color-honey-400);
+}
+
+/* ===== Marquee ===== */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 28s linear infinite;
+}
+
+/* ===== Scroll-down indicator ===== */
+@keyframes scroll-down {
+  0% { top: -100%; }
+  100% { top: 100%; }
+}
+
+/* ===== Reveal-on-scroll ===== */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.reveal-section {
+  animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* ===== Hero entry (CSS-driven, runs on first paint — no JS dependency) ===== */
+@keyframes heroRise {
+  from { opacity: 0; transform: translateY(28px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.hero-rise {
+  opacity: 0;
+  animation: heroRise 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* ===== Hover underline ===== */
+.hover-line {
+  position: relative;
+  display: inline-block;
+}
+.hover-line::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: currentColor;
+  transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hover-line:hover::after { width: 100%; }
+
+/* ===== 和紙紋様 (subtle washi paper grain) ===== */
+.washi-paper {
+  background-image:
+    radial-gradient(rgba(122, 96, 40, 0.05) 1px, transparent 1px),
+    radial-gradient(rgba(122, 96, 40, 0.04) 1px, transparent 1px);
+  background-size: 12px 12px, 18px 18px;
+  background-position: 0 0, 6px 9px;
+}
+
+/* ===== 縦書き (vertical writing) — 養生 LP 標題で使用 ===== */
+.tategaki {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+@media (max-width: 768px) {
+  .editorial-num { font-size: clamp(5rem, 18vw, 8rem); right: -0.5rem; }
+}
