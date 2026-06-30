@@ -26,10 +26,10 @@ export function VideoPreview() {
 
           <div className="max-w-2xl">
             <h2 className="font-display font-light text-4xl md:text-5xl lg:text-6xl text-honey-50 leading-[1.2] mb-4">
-              無料養生知識影片區
+              無料養生知識動画
             </h2>
             <p className="text-base md:text-lg text-honey-100/80 max-w-md">
-              伝統中医学に基づいた養生方法と穴位按摩の実践方法を動画でご紹介します。
+              伝統中医学に基づいた養生方法と穴位按摩の実踐方法を動画でご紹介します。
             </p>
           </div>
         </div>
@@ -75,7 +75,7 @@ export function VideoPreview() {
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
               <div>
                 <h3 className="text-lg md:text-xl font-semibold text-honey-50 mb-2">
-                  中医学養生講座：健康維持の実践方法
+                  中医学養生講座：健康維持の実踐方法
                 </h3>
                 <p className="text-sm md:text-base text-honey-100/70">
                   資深中医師による養生の基本テクニックと日常生活への取り入れ方をご紹介します。
@@ -92,12 +92,12 @@ export function VideoPreview() {
         <div className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
             {
-              title: "実践的な手法",
+              title: "実踐的な手法",
               description: "資深中医師による正確な養生テクニック",
             },
             {
               title: "日常生活への応用",
-              description: "自宅で簡単に実践できる養生方法",
+              description: "自宅で簡単に実踐できる養生方法",
             },
             {
               title: "科学的根拠",
