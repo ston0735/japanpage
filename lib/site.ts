@@ -11,7 +11,7 @@ export const SITE = {
 export const COMPANY = {
   legalName: "ベスト株式会社",
   representative: "林志傑",
-  address: "台湾新北市板橋区文化路一段329号4階",
+  address: "台灣新北市板橋区文化路一段329号4階",
   addressEn: "4F., No. 329, Sec. 1, Wenhua Rd., Banqiao Dist., New Taipei City 220, Taiwan (R.O.C.)",
   phone: "080-4956-0029",
   phoneTel: "+818049560029",
@@ -61,7 +61,7 @@ export const COURSE = {
   ] as const,
 } as const;
 
-const FALLBACK_LINE_URL = "https://lin.ee/uRckWeC";
+const FALLBACK_LINE_URL = "https://lihi2.me/P5cfv";
 const FALLBACK_LINE_ID = "@best";
 
 export const CONTACT = {
