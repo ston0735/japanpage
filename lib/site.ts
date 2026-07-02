@@ -61,7 +61,7 @@ export const COURSE = {
   ] as const,
 } as const;
 
-const FALLBACK_LINE_URL = "https://lihi2.me/P5cfv";
+const FALLBACK_LINE_URL = "https://lin.ee/5z9mR9X";
 const FALLBACK_LINE_ID = "@best";
 
 export const CONTACT = {
