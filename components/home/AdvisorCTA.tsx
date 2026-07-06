@@ -32,7 +32,7 @@ export function AdvisorCTA() {
               </h2>
               <p className="mt-6 max-w-prose text-base leading-relaxed text-ink-800 md:text-lg">
                 睡眠、冷え、消化、肌荒れ、ストレス──
-                気になる体調を入力するだけで、AI が中医学の視点から
+                気になる体調を入力するだけで、AI が養生の視点から
                 おすすめの養生法と関連レッスンをご提案します。登録不要・無料でご利用いただけます。
               </p>
               <Button

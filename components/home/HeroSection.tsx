@@ -89,7 +89,7 @@ export function HeroSection() {
       <div className="hero-image absolute inset-0 will-change-transform">
         <Image
           src="/images/hero-herbs.jpg"
-          alt="伝統中医学の薬膳食材と陶器の鍋"
+          alt="伝統養生の薬膳食材と陶器の鍋"
           fill
           priority
           fetchPriority="high"
@@ -134,7 +134,7 @@ export function HeroSection() {
             className="hero-rise mt-5 font-display font-light text-honey-50 leading-[1.1] tracking-tight drop-shadow-[0_4px_28px_rgba(0,0,0,0.55)] text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl"
             style={{ animationDelay: "0.28s" }}
           >
-            伝統中医学のメソッドで、
+            伝統養生のメソッドで、
           </h1>
           <h1
             className="hero-rise font-display font-light italic text-outline-honey leading-[1.1] tracking-tight text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl"
@@ -147,7 +147,7 @@ export function HeroSection() {
             className="hero-rise mt-5 max-w-xl text-sm leading-relaxed text-honey-50 md:text-base lg:text-lg drop-shadow-[0_2px_14px_rgba(0,0,0,0.55)]"
             style={{ animationDelay: "0.55s" }}
           >
-            体質判定から四季の養生、経絡保健まで、伝統中医学の知恵を現代の暮らしに届けます。期間限定で全コンテンツを無料公開中。
+            体質判定から四季の養生、経絡保健まで、伝統養生の知恵を現代の暮らしに届けます。期間限定で全コンテンツを無料公開中。
           </p>
 
           <div
@@ -211,7 +211,7 @@ export function HeroSection() {
         </div>
         <div className="ml-auto text-right text-honey-50/95 drop-shadow-[0_2px_10px_rgba(0,0,0,0.6)]">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] opacity-85">
-            伝統中医学
+            伝統養生
           </p>
           <p className="font-display italic text-xl md:text-2xl mt-0.5">
             Since 1953

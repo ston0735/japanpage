@@ -1,4 +1,4 @@
-const PHRASE = "伝統中医学 — 体質判定 — 四季養生 — 経絡保健 — 薬膳食療 — ";
+const PHRASE = "伝統養生 — 体質判定 — 四季養生 — 経絡保健 — 薬膳食療 — ";
 
 export function BrandMarquee() {
   return (

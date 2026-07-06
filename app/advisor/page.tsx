@@ -4,7 +4,7 @@ import { AdvisorChat } from "@/components/advisor/AdvisorChat";
 export const metadata: Metadata = {
   title: "AI 養生アドバイザー",
   description:
-    "ベスト AI 養生アドバイザーが、中医学の視点から日々の体調や養生のヒントをやさしく解説します。",
+    "ベスト AI 養生アドバイザーが、養生の視点から日々の体調や養生のヒントをやさしく解説します。",
 };
 
 export default function AdvisorPage() {
@@ -15,7 +15,7 @@ export default function AdvisorPage() {
           AI 養生アドバイザー
         </h1>
         <p className="mt-2 text-base text-ink-700">
-          気になる体調・お悩みを入力してください。中医学の視点から養生のヒントをご提案します。
+          気になる体調・お悩みを入力してください。養生の視点から養生のヒントをご提案します。
         </p>
       </header>
       <AdvisorChat />

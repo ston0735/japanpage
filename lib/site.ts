@@ -2,9 +2,9 @@ export const SITE = {
   name: "ベスト",
   legalName: "ベスト株式会社 / Bestptr Co., Ltd. / 百事博股份有限公司(百事博數位)",
   romanizedName: "Bestptr Co., Ltd.",
-  tagline: "伝統中医学の秘密・健康維持コース",
+  tagline: "伝統養生の秘密・健康維持コース",
   description:
-    "資深中医師が直接指導する養生入門講座。体質判定から四季の養生、経絡保健、薬膳まで、伝統中医学の知恵を現代の暮らしに届けます。",
+    "資深專門家が直接指導する養生入門講座。体質判定から四季の養生、経絡保健、薬膳まで、伝統養生の知恵を現代の暮らしに届けます。",
   url: "https://bashibo-health.com",
 } as const;
 
@@ -32,7 +32,7 @@ export const PROMO = {
 export const COURSE = {
   trialName: "健康維持コース・無料体験",
   trialDescription:
-    "中医師が指導する養生入門講座。期間限定で無料公開。ご登録後、すぐに無料特典をお受け取りいただけます。",
+    "專門家が指導する養生入門講座。期間限定で無料公開。ご登録後、すぐに無料特典をお受け取りいただけます。",
   paidName: "健康維持コース・本講座",
   paidPrice: 26000,
   paidCurrency: "JPY",
@@ -41,7 +41,7 @@ export const COURSE = {
   benefits: [
     {
       title: "無料 養生知識動画",
-      detail: "資深中医師による解説動画・約60分・オンラインでいつでも視聴可能",
+      detail: "資深專門家による解説動画・約60分・オンラインでいつでも視聴可能",
     },
     {
       title: "無料 養生電子書籍 (PDF)",

@@ -10,7 +10,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { CONTACT } from "@/lib/site";
 
 const QUICK_QUESTIONS = [
-  "最近、寝つきが悪く朝もだるい。中医学的にどう整えれば？",
+  "最近、寝つきが悪く朝もだるい。養生的にどう整えれば？",
   "夏でも手足が冷えやすいのですが、改善のヒントは？",
   "胃もたれが続いています。食事と養生で整える方法は？",
   "ストレスでイライラしやすい。気の巡りを整えたいです。",
@@ -52,7 +52,7 @@ export function AdvisorChat() {
               ベスト AI 養生アドバイザー
             </h3>
             <p className="mt-2 max-w-md text-ink-700">
-              気になる体調や悩みを入力してください。中医学の視点からやさしくお答えします。
+              気になる体調や悩みを入力してください。養生の視点からやさしくお答えします。
             </p>
             <div className="mt-6 grid w-full max-w-2xl grid-cols-1 gap-2 sm:grid-cols-2">
               {QUICK_QUESTIONS.map((q) => (

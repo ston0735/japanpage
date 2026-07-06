@@ -29,7 +29,7 @@ export function CourseSection() {
             体系的に学ぶ。
           </h2>
           <p className="text-base text-ink-700 leading-[1.9] max-w-md">
-            中医学の基礎から日々の養生まで、現代の暮らしにそのまま使える知識を体系的にご紹介します。
+            養生の基礎から日々の養生まで、現代の暮らしにそのまま使える知識を体系的にご紹介します。
           </p>
         </div>
 

@@ -3,8 +3,8 @@ import { Stethoscope, Smartphone, MessageCircleHeart } from "lucide-react";
 const BADGES = [
   {
     icon: Stethoscope,
-    title: "中医師による直接監修",
-    desc: "臨床経験豊富な資深中医師が、すべてのレッスンを監修・解説。中医学の本物の智慧をそのままお届けします。",
+    title: "專門家による直接監修",
+    desc: "臨床経験豊富な資深專門家が、すべてのレッスンを監修・解説。養生の本物の智慧をそのままお届けします。",
   },
   {
     icon: Smartphone,

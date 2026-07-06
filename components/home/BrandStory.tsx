@@ -7,7 +7,7 @@ const MILESTONES = [
   {
     year: "1953",
     title: "創業者・修業の道へ",
-    desc: "創業者が伝統中医学の道に入る。古典医書と臨床経験から養生の基礎を確立。",
+    desc: "創業者が伝統養生の道に入る。古典医書と臨床経験から養生の基礎を確立。",
   },
   {
     year: "1980",
@@ -103,7 +103,7 @@ export function BrandStory() {
             <div className="bs-poster-img absolute inset-x-0 -top-[8%] h-[120%] will-change-transform">
               <Image
                 src="/images/brand-story.jpg"
-                alt="中医学の道、七十余年 — ベスト株式会社のストーリー"
+                alt="養生の道、七十余年 — ベスト株式会社のストーリー"
                 fill
                 sizes="(max-width: 1024px) 100vw, 600px"
                 className="object-cover"

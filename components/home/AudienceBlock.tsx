@@ -44,7 +44,7 @@ export function AudienceBlock() {
               <span className="text-honey-700">おすすめ。</span>
             </h2>
             <p className="mt-6 text-base md:text-lg text-ink-700 leading-[1.9] max-w-md">
-              中医学は、特定の病気の治療法ではなく、
+              養生は、特定の病気の治療法ではなく、
               「体質を整える生活の工夫」を体系化した知恵です。
               次のような方にぴったりです。
             </p>

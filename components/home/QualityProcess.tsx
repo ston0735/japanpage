@@ -52,7 +52,7 @@ export function QualityProcess() {
           <div className="relative aspect-[3/4] w-full max-w-md mx-auto overflow-hidden rounded-2xl shadow-xl shadow-honey-300/30 ring-1 ring-honey-200/60">
             <Image
               src="/images/online-class.jpg"
-              alt="中医師によるオンライン養生講座を受講する女性"
+              alt="專門家によるオンライン養生講座を受講する女性"
               fill
               sizes="(max-width: 1024px) 100vw, 480px"
               className="object-cover"

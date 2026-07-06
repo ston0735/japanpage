@@ -16,7 +16,7 @@ const STATS: readonly Stat[] = [
     value: 2000,
     display: (n) => `${Math.round(n)}+`,
     label: "Years",
-    desc: "中医学の歴史と知恵を現代へ",
+    desc: "養生の歴史と知恵を現代へ",
   },
   {
     key: "lessons",
@@ -30,7 +30,7 @@ const STATS: readonly Stat[] = [
     value: 100,
     display: (n) => `${Math.round(n)}%`,
     label: "監修",
-    desc: "資深中医師による専門監修",
+    desc: "資深專門家による専門監修",
   },
 ] as const;
 
@@ -162,14 +162,14 @@ export function BrandStats() {
         <div className="grid gap-12 lg:grid-cols-[1.2fr_1fr] lg:gap-20 items-start">
           <div className="bs-heading">
             <h2 className="font-display font-light text-4xl md:text-5xl lg:text-6xl leading-[1.2] text-ink-900">
-              二千年の中医学を、
+              二千年の養生を、
               <br />
               <span className="text-honey-600">あなたの暮らしへ。</span>
             </h2>
             <p className="mt-8 max-w-prose text-base leading-[1.9] text-ink-700">
-              「健康維持コース」は、二千年以上の歴史を持つ伝統中医学の智慧を、
+              「健康維持コース」は、二千年以上の歴史を持つ伝統養生の智慧を、
               日々の暮らしに無理なく取り入れられるよう体系化した養生プログラムです。
-              体質判定から四季の養生、経絡保健、薬膳まで、資深中医師が一つずつ丁寧に解説します。
+              体質判定から四季の養生、経絡保健、薬膳まで、資深專門家が一つずつ丁寧に解説します。
             </p>
           </div>
 
