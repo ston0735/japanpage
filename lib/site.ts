@@ -1,7 +1,7 @@
 export const SITE = {
   name: "ベスト",
-  legalName: "ベスト株式会社",
-  romanizedName: "Best Co., Ltd.",
+  legalName: "ベスト株式会社 / Bestptr Co., Ltd. / 百事博股份有限公司(百事博數位)",
+  romanizedName: "Bestptr Co., Ltd.",
   tagline: "伝統中医学の秘密・健康維持コース",
   description:
     "資深中医師が直接指導する養生入門講座。体質判定から四季の養生、経絡保健、薬膳まで、伝統中医学の知恵を現代の暮らしに届けます。",
@@ -9,7 +9,7 @@ export const SITE = {
 } as const;
 
 export const COMPANY = {
-  legalName: "ベスト株式会社",
+  legalName: "ベスト株式会社 / Bestptr Co., Ltd. / 百事博股份有限公司(百事博數位)",
   representative: "林志傑",
   address: "台灣新北市板橋区文化路一段329号4階",
   addressEn: "4F., No. 329, Sec. 1, Wenhua Rd., Banqiao Dist., New Taipei City 220, Taiwan (R.O.C.)",
