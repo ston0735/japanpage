@@ -4,6 +4,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { SITE } from "@/lib/site";
+import Script from "next/script";
 import "./globals.css";
 
 const notoSansJP = Noto_Sans_JP({
@@ -45,6 +46,35 @@ export default function RootLayout({
       className={`${notoSansJP.variable} ${shipporiMincho.variable} h-full`}
       suppressHydrationWarning
     >
+      <head>
+        {/* LY Corporation Global snippet */}
+        <Script
+          src="https://tag.flvcdn.net/lytag.js"
+          strategy="afterInteractive"
+          async
+        />
+        <Script id="ly-tag-init" strategy="afterInteractive">
+          {`
+            window.lyDataLayer = window.lyDataLayer || [];
+            function lytag() {
+                lyDataLayer.push(Array.from(arguments));
+            }
+            lytag({
+                type: 'init',
+                tagId: 'e112fbca-6451-4dff-a992-e5ef1388c8cd',
+                config: {
+                    useCookie: true,
+                    useLocalStorage: true
+                }
+            });
+            lytag({
+                type: 'event',
+                eventType: 'page_view',
+                tagId: 'e112fbca-6451-4dff-a992-e5ef1388c8cd'
+            });
+          `}
+        </Script>
+      </head>
       <body
         className="min-h-full flex flex-col bg-background text-foreground antialiased"
         suppressHydrationWarning

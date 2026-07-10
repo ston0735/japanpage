@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { CONTACT, SITE } from "@/lib/site";
+import { trackPurchase } from "@/lib/tracking";
 
 const NAV_LINKS = [
   { href: "/#course", label: "コース内容" },
@@ -61,6 +62,7 @@ export function Header() {
             asChild
             size="sm"
             className="hidden md:inline-flex bg-[var(--color-line)] hover:bg-[var(--color-line-dark)] text-white rounded-full px-5"
+            onClick={trackPurchase}
           >
             <a
               href={CONTACT.lineUrl}
@@ -103,6 +105,7 @@ export function Header() {
                   href={CONTACT.lineUrl}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={trackPurchase}
                   className="mt-3 inline-flex items-center justify-center gap-2 rounded-full bg-[var(--color-line)] px-4 py-3 text-base font-medium text-white"
                 >
                   <MessageCircle className="h-4 w-4" />

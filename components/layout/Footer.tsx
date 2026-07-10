@@ -1,6 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import { Phone, MessageCircle, Mail, MapPin } from "lucide-react";
 import { COMPANY, CONTACT, SITE } from "@/lib/site";
+import { trackPurchase } from "@/lib/tracking";
 
 export function Footer() {
   return (
@@ -53,6 +56,7 @@ export function Footer() {
                 href={CONTACT.lineUrl}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={trackPurchase}
                 className="hover:text-honey-600"
               >
                 LINE：{CONTACT.lineId}

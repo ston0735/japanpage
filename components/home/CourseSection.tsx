@@ -1,7 +1,10 @@
+"use client";
+
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { COURSE, CONTACT, PROMO } from "@/lib/site";
+import { trackPurchase } from "@/lib/tracking";
 
 export function CourseSection() {
   return (
@@ -89,6 +92,7 @@ export function CourseSection() {
               asChild
               size="lg"
               className="mt-7 w-full bg-[var(--color-line)] hover:bg-[var(--color-line-dark)] text-white rounded-full h-12"
+              onClick={trackPurchase}
             >
               <a
                 href={CONTACT.lineUrl}

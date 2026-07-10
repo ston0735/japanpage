@@ -1,6 +1,9 @@
+"use client";
+
 import { MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CONTACT, PROMO } from "@/lib/site";
+import { trackPurchase } from "@/lib/tracking";
 
 export function FinalCTA() {
   return (
@@ -36,6 +39,7 @@ export function FinalCTA() {
             asChild
             size="lg"
             className="bg-[var(--color-line)] hover:bg-[var(--color-line-dark)] text-white rounded-full px-10 h-14 text-base shadow-2xl shadow-[var(--color-line)]/30"
+            onClick={trackPurchase}
           >
             <a
               href={CONTACT.lineUrl}

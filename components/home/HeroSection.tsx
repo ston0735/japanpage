@@ -6,6 +6,7 @@ import { useEffect, useRef } from "react";
 import { ArrowRight, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CONTACT, PROMO } from "@/lib/site";
+import { trackPurchase } from "@/lib/tracking";
 
 export function HeroSection() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -158,6 +159,7 @@ export function HeroSection() {
               asChild
               size="lg"
               className="bg-[var(--color-line)] text-white hover:bg-[var(--color-line-dark)] rounded-full px-7 h-12 shadow-2xl shadow-ink-900/50"
+              onClick={trackPurchase}
             >
               <a
                 href={CONTACT.lineUrl}
